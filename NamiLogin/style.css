@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #0093e9;
+    background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+    background: url(bg4.jpg)no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    position: relative;
+    width: 310px;
+    height: 370px;
+    background-color: #131313;
+    border-radius: 10px;
+    padding: 64px 40px 20px 40px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.505), -10px -10px 20px rgba(0, 0, 0, 0.361);
+    background: transparent;
+    backdrop-filter: blur(15px);
+}
+
+.user {
+    background-image: url(bg3.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    left: 110px;
+    top: -40px;
+    background-color: #000000;
+    border-radius: 50%;
+}
+
+form h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 1.3em;
+}
+
+.input-text {
+    margin: 20px 0;
+    position: relative;
+}
+
+.input-text input {
+    width: 100%;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgba(255, 0, 0, 0.463);
+    font-size: 17px;
+    padding-top: 20px;
+}
+
+.input-text label{
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    pointer-events: none;
+    font-size: 14px;
+    transition: 0.6s;
+}
+
+form input:focus+label,
+input:valid~label {
+    bottom: 24px;
+    left: 2px;
+    color: red;
+    font-size: 13px;
+}
+
+form input[type="submit"] {
+    background-color: red;
+    outline: none;
+    border: none;
+    padding: 5px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    padding: 3px 20px;
+    font-size: 15px;
+    border-radius: 15px;
+}
+
+.box {
+    position: relative;
+}
+
+.forgot {
+    position: absolute;
+    font-size: 10px;
+    padding: 5px 0;
+    right: 0;
+}
+
+.forgot a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.forgot a:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+.footer {
+    position: absolute;
+    left: 0;
+    width: 100%;
+}
+
+.line { 
+    background-color: white;
+    width: 100%;
+    height: .2px;
+    opacity: 2;
+    margin-top: 30px;
+}
+
+.signup {
+    font-size: 12px;
+    padding: 10px;
+    text-align: center;
+}
+
+.signup a {
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+}
+
+.signup a:hover {
+    text-decoration: underline;
+}
